@@ -1,0 +1,18 @@
+{"action_type": "download_marshal_and_store", "task_uuid": "99847166-ed01-4df0-92ba-427062a72a01", "urls": ["https://httpbin.org/user-agent", "http://google.com", "derp"], "action_status": "started", "task_level": [1], "timestamp": 1515775107.3732438}
+{"action_type": "download", "task_uuid": "99847166-ed01-4df0-92ba-427062a72a01", "url": "https://httpbin.org/user-agent", "action_status": "started", "task_level": [2, 1], "timestamp": 1515775107.373874}
+{"timestamp": 1515775107.9161322, "task_uuid": "99847166-ed01-4df0-92ba-427062a72a01", "task_level": [2, 2], "action_status": "succeeded", "action_type": "download"}
+{"action_type": "marshal", "task_uuid": "99847166-ed01-4df0-92ba-427062a72a01", "url": "https://httpbin.org/user-agent", "action_status": "started", "task_level": [3, 1], "timestamp": 1515775107.916482}
+{"timestamp": 1515775107.916909, "task_uuid": "99847166-ed01-4df0-92ba-427062a72a01", "task_level": [3, 2], "action_status": "succeeded", "action_type": "marshal"}
+{"timestamp": 1515775107.917249, "task_uuid": "99847166-ed01-4df0-92ba-427062a72a01", "task_level": [4, 1], "action_status": "started", "action_type": "store"}
+{"timestamp": 1515775107.917901, "task_uuid": "99847166-ed01-4df0-92ba-427062a72a01", "task_level": [4, 2], "action_status": "succeeded", "action_type": "store"}
+{"action_type": "download", "task_uuid": "99847166-ed01-4df0-92ba-427062a72a01", "url": "http://google.com", "action_status": "started", "task_level": [5, 1], "timestamp": 1515775107.918252}
+{"timestamp": 1515775108.266167, "task_uuid": "99847166-ed01-4df0-92ba-427062a72a01", "task_level": [5, 2], "action_status": "succeeded", "action_type": "download"}
+{"action_type": "marshal", "task_uuid": "99847166-ed01-4df0-92ba-427062a72a01", "url": "http://www.google.com/", "action_status": "started", "task_level": [6, 1], "timestamp": 1515775108.266669}
+{"exception": "json.decoder.JSONDecodeError", "task_uuid": "99847166-ed01-4df0-92ba-427062a72a01", "reason": "Expecting value: line 1 column 1 (char 0)", "action_status": "failed", "task_level": [6, 2], "timestamp": 1515775108.267137, "action_type": "marshal"}
+{"action_type": "download", "task_uuid": "99847166-ed01-4df0-92ba-427062a72a01", "url": "derp", "action_status": "started", "task_level": [7, 1], "timestamp": 1515775108.2676082}
+{"task_level": [7, 2], "action_type": "download", "timestamp": 1515775108.269165, "task_uuid": "99847166-ed01-4df0-92ba-427062a72a01", "reason": "Invalid URL 'derp': No schema supplied. Perhaps you meant http://derp?", "errno": null, "action_status": "failed", "exception": "requests.exceptions.MissingSchema"}
+{"timestamp": 1515775108.269453, "task_uuid": "99847166-ed01-4df0-92ba-427062a72a01", "task_level": [8], "action_status": "succeeded", "action_type": "download_marshal_and_store"}
+{"task_uuid": "a49da784-9470-4cba-997d-dbbcbe824082", "useless_kwarg": "I'm useless", "action_status": "started", "task_level": [1], "timestamp": 1515775108.292955, "args": ["hello"], "action_type": "reverse_string"}
+{"timestamp": 1515775108.29327, "task_uuid": "a49da784-9470-4cba-997d-dbbcbe824082", "task_level": [2], "action_status": "succeeded", "action_type": "reverse_string"}
+{"action_type": "reverse_string", "args": [-1], "task_uuid": "3ad74c03-4341-4d60-8707-65e223a2bd29", "action_status": "started", "task_level": [1], "timestamp": 1515775108.314592}
+{"exception": "builtins.TypeError", "task_uuid": "3ad74c03-4341-4d60-8707-65e223a2bd29", "reason": "'int' object is not subscriptable", "action_status": "failed", "task_level": [2], "timestamp": 1515775108.315027, "action_type": "reverse_string"}
