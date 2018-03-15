@@ -158,3 +158,6 @@ venv.bak/
 eliot-tree
 .idea/
 db.json
+log
+db.json
+log.json

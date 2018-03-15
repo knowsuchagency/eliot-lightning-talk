@@ -11,8 +11,11 @@ eliot = "*"
 requests = "*"
 click = "*"
 jupyter = "*"
+jupyterlab = "*"
+jupyterlab-launcher = "*"
 yapf = "*"
 tinydb = "*"
+eliot-tree = "*"
 
 
 [dev-packages]
